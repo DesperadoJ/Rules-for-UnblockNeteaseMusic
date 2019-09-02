@@ -1,0 +1,76 @@
+# HTTP 代理端口
+port: 7890
+
+# SOCKS5 代理端口
+socks-port: 7891
+
+# Linux 和 macOS 的 redir 代理端口 (如需使用此功能，请取消注释)
+# redir-port: 7892
+
+# 允许局域网的连接（可用来共享代理）
+allow-lan: false
+
+# 规则模式：Rule（规则） / Global（全局代理）/ Direct（全局直连）
+mode: Rule
+
+# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
+# 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
+log-level: info
+
+# clash 的 RESTful API
+external-controller: 127.0.0.1:9090
+
+# 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `${API}/ui`
+# 参数应填写配置目录的相对路径或绝对路径。
+# external-ui: folder
+
+# RESTful API 的口令 (可选)
+# secret: ""
+
+# DNS 设置
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  nameserver:
+   - 119.29.29.29
+   - 223.5.5.5
+
+Proxy:
+- { name: "Unblock Netease Music", type: ss, server: 1.1.1.1, port: 30001, cipher: AES-128-GCM, password: "password" }
+
+Proxy Group:
+- { name: "Proxy", type: select, proxies: ["Unblock Netease Music"] }
+
+Rule:
+# Unblock Netease Music
+- IP-CIDR,39.105.63.80/32,Proxy
+- IP-CIDR,47.100.127.239/32,Proxy
+- IP-CIDR,59.111.160.195/32,Proxy
+- IP-CIDR,59.111.160.197/32,Proxy
+- IP-CIDR,59.111.181.35/32,Proxy
+- IP-CIDR,59.111.181.38/32,Proxy
+- IP-CIDR,59.111.181.60/32,Proxy
+- IP-CIDR,101.71.154.241/32,Proxy
+- IP-CIDR,103.126.92.132/32,Proxy
+- IP-CIDR,103.126.92.133/32,Proxy
+- IP-CIDR,112.13.119.17/32,Proxy
+- IP-CIDR,115.236.118.33/32,Proxy
+- IP-CIDR,118.24.63.156/32,Proxy
+- IP-CIDR,193.112.159.225/32,Proxy
+- IP-CIDR,223.252.199.66/32,Proxy
+- IP-CIDR,223.252.199.67/32,Proxy
+- DOMAIN-SUFFIX,apm3.music.163.com,Proxy
+- DOMAIN-SUFFIX,apm.music.163.com,Proxy
+- DOMAIN-SUFFIX,interface3.music.163.com,Proxy
+- DOMAIN-SUFFIX,interface.music.163.com,Proxy
+- DOMAIN-SUFFIX,music.163.com,Proxy
+
+# Advertising
+- DOMAIN-SUFFIX,admusicpic.music.126.net,REJECT
+- DOMAIN-SUFFIX,iadmat.nosdn.127.net,REJECT
+- DOMAIN-SUFFIX,iadmusicmat.music.126.net,REJECT
+- DOMAIN-SUFFIX,iadmusicmatvideo.music.126.net,REJECT
+
+# Final
+- MATCH,DIRECT
