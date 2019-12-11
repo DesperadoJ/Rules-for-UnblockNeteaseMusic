@@ -19,10 +19,19 @@ dns:
    - 223.5.5.5
 
 Proxy:
-- { name: "Unblock", type: ss, server: music.desperadoj.com, port: 30001, cipher: AES-128-GCM, password: "desperadoj.com" }
+- name: "🎶 Unblock"
+  type: ss
+  server: music.desperadoj.com
+  port: 30001
+  cipher: aes-128-gcm
+  password: “desperadoj.com”
 
 Proxy Group:
-- { name: "🎵 Netease Music", type: select, proxies: [ "Unblock", "DIRECT" ] }
+- name: "🎵 Netease Music"
+  type: select
+  proxies: 
+    - 🎶 Unblock
+    - DIRECT
 
 Rule:
 # Unblock Netease Music
