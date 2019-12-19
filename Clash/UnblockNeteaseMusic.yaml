@@ -24,7 +24,7 @@ Proxy:
   server: music.desperadoj.com
   port: 30001
   cipher: aes-128-gcm
-  password: “desperadoj.com”
+  password: desperadoj.com
 
 Proxy Group:
 - name: "🎵 Netease Music"
