@@ -1,4 +1,5 @@
 # Unblock Netease Music
+HOST,api.iplay.163.com,Unblock Netease Music
 HOST,apm3.music.163.com,Unblock Netease Music
 HOST,apm.music.163.com,Unblock Netease Music
 HOST,interface3.music.163.com,Unblock Netease Music

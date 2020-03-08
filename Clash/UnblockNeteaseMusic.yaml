@@ -29,6 +29,7 @@ Proxy Group:
 
 Rule:
 # Unblock Netease Music
+- DOMAIN,api.iplay.163.com,🎵 Netease Music
 - DOMAIN,apm3.music.163.com,🎵 Netease Music
 - DOMAIN,apm.music.163.com,🎵 Netease Music
 - DOMAIN,interface3.music.163.com,🎵 Netease Music
