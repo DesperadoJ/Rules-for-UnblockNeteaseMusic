@@ -1,15 +1,9 @@
 port: 7890
-
 socks-port: 7891
-
 allow-lan: false
-
 mode: Rule
-
-log-level: silent
-
+log-level: info
 external-controller: 127.0.0.1:9090
-
 dns:
   enable: true
   listen: 0.0.0.0:53
@@ -35,7 +29,6 @@ Proxy Group:
 
 Rule:
 # Unblock Netease Music
-- DOMAIN,api.iplay.163.com,🎵 Netease Music
 - DOMAIN,apm3.music.163.com,🎵 Netease Music
 - DOMAIN,apm.music.163.com,🎵 Netease Music
 - DOMAIN,interface3.music.163.com,🎵 Netease Music
