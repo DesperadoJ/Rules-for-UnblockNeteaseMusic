@@ -9,57 +9,57 @@ dns:
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
   nameserver:
-   - 119.29.29.29
-   - 223.5.5.5
+    - 119.29.29.29
+    - 223.5.5.5
 
 Proxy:
-- name: "🎶 Unblock"
-  type: ss
-  server: music.desperadoj.com
-  port: 30001
-  cipher: aes-128-gcm
-  password: desperadoj.com
+  - name: 🎶 解锁
+    type: ss
+    server: music.desperadoj.com
+    port: 30001
+    cipher: aes-128-gcm
+    password: desperadoj.com
 
 Proxy Group:
-- name: "🎵 Netease Music"
-  type: select
-  proxies: 
-    - 🎶 Unblock
-    - DIRECT
+  - name: 🎵 网易云音乐
+    type: select
+    proxies:
+      - 🎶 解锁
+      - DIRECT
 
 Rule:
-# Unblock Netease Music
-- DOMAIN,api.iplay.163.com,🎵 Netease Music
-- DOMAIN,apm3.music.163.com,🎵 Netease Music
-- DOMAIN,apm.music.163.com,🎵 Netease Music
-- DOMAIN,interface3.music.163.com,🎵 Netease Music
-- DOMAIN,interface.music.163.com,🎵 Netease Music
-- DOMAIN,music.163.com,🎵 Netease Music
-- IP-CIDR,39.105.63.80/32,🎵 Netease Music
-- IP-CIDR,45.254.48.1/32,🎵 Netease Music
-- IP-CIDR,47.100.127.239/32,🎵 Netease Music
-- IP-CIDR,59.111.160.195/32,🎵 Netease Music
-- IP-CIDR,59.111.160.197/32,🎵 Netease Music
-- IP-CIDR,59.111.181.35/32,🎵 Netease Music
-- IP-CIDR,59.111.181.38/32,🎵 Netease Music
-- IP-CIDR,59.111.181.60/32,🎵 Netease Music
-- IP-CIDR,101.71.154.241/32,🎵 Netease Music
-- IP-CIDR,103.126.92.132/32,🎵 Netease Music
-- IP-CIDR,103.126.92.133/32,🎵 Netease Music
-- IP-CIDR,112.13.119.17/32,🎵 Netease Music
-- IP-CIDR,112.13.122.1/32,🎵 Netease Music
-- IP-CIDR,115.236.118.33/32,🎵 Netease Music
-- IP-CIDR,115.236.121.1/32,🎵 Netease Music
-- IP-CIDR,118.24.63.156/32,🎵 Netease Music
-- IP-CIDR,193.112.159.225/32,🎵 Netease Music
-- IP-CIDR,223.252.199.66/32,🎵 Netease Music
-- IP-CIDR,223.252.199.67/32,🎵 Netease Music
+  # Netease Music
+  - DOMAIN,api.iplay.163.com,🎵 网易云音乐
+  - DOMAIN,apm3.music.163.com,🎵 网易云音乐
+  - DOMAIN,apm.music.163.com,🎵 网易云音乐
+  - DOMAIN,interface3.music.163.com,🎵 网易云音乐
+  - DOMAIN,interface.music.163.com,🎵 网易云音乐
+  - DOMAIN,music.163.com,🎵 网易云音乐
+  - IP-CIDR,39.105.63.80/32,🎵 网易云音乐
+  - IP-CIDR,45.254.48.1/32,🎵 网易云音乐
+  - IP-CIDR,47.100.127.239/32,🎵 网易云音乐
+  - IP-CIDR,59.111.160.195/32,🎵 网易云音乐
+  - IP-CIDR,59.111.160.197/32,🎵 网易云音乐
+  - IP-CIDR,59.111.181.35/32,🎵 网易云音乐
+  - IP-CIDR,59.111.181.38/32,🎵 网易云音乐
+  - IP-CIDR,59.111.181.60/32,🎵 网易云音乐
+  - IP-CIDR,101.71.154.241/32,🎵 网易云音乐
+  - IP-CIDR,103.126.92.132/32,🎵 网易云音乐
+  - IP-CIDR,103.126.92.133/32,🎵 网易云音乐
+  - IP-CIDR,112.13.119.17/32,🎵 网易云音乐
+  - IP-CIDR,112.13.122.1/32,🎵 网易云音乐
+  - IP-CIDR,115.236.118.33/32,🎵 网易云音乐
+  - IP-CIDR,115.236.121.1/32,🎵 网易云音乐
+  - IP-CIDR,118.24.63.156/32,🎵 网易云音乐
+  - IP-CIDR,193.112.159.225/32,🎵 网易云音乐
+  - IP-CIDR,223.252.199.66/32,🎵 网易云音乐
+  - IP-CIDR,223.252.199.67/32,🎵 网易云音乐
 
-# Advertising
-- DOMAIN,admusicpic.music.126.net,REJECT
-- DOMAIN,iadmat.nosdn.127.net,REJECT
-- DOMAIN,iadmusicmat.music.126.net,REJECT
-- DOMAIN,iadmusicmatvideo.music.126.net,REJECT
+  # Netease Music Advertising
+  - DOMAIN,admusicpic.music.126.net,REJECT
+  - DOMAIN,iadmat.nosdn.127.net,REJECT
+  - DOMAIN,iadmusicmat.music.126.net,REJECT
+  - DOMAIN,iadmusicmatvideo.music.126.net,REJECT
 
-# Final
-- MATCH,DIRECT
+  # Final
+  - MATCH,DIRECT
