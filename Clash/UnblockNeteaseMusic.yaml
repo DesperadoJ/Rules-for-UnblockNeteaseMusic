@@ -1,3 +1,9 @@
+# https://desperadoj.com/16.html
+#
+# 本代理完全免费，如遇收费请投诉举报卖家
+#
+# This proxy is for free, please complain the seller if you were charged
+
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -12,22 +18,33 @@ dns:
     - 119.29.29.29
     - 223.5.5.5
 
-Proxy:
-  - name: 🎶 解锁
+proxies:
+  - name: 🎶 解锁 ( Windows, Android )
     type: ss
     server: music.desperadoj.com
     port: 30001
     cipher: aes-128-gcm
-    password: desperadoj.com
+    password: desperadoj.com_free_proxy_gt5i
+  - name: 🎶 解锁 ( macOS, iOS, Linux )
+    type: ss
+    server: music.desperadoj.com
+    port: 30003
+    cipher: aes-128-gcm
+    password: desperadoj.com_free_proxy_gt5i
 
-Proxy Group:
+proxy-groups:
   - name: 🎵 网易云音乐
     type: select
     proxies:
-      - 🎶 解锁
+      - 🎶 解锁 ( Windows, Android )
+      - 🎶 解锁 ( macOS, iOS, Linux )
+      - DIRECT
+  - name: ‼️ 免费代理，如遇收费请举报
+    type: select
+    proxies:
       - DIRECT
 
-Rule:
+rules:
   # Netease Music
   - DOMAIN,api.iplay.163.com,🎵 网易云音乐
   - DOMAIN,apm3.music.163.com,🎵 网易云音乐
@@ -35,25 +52,25 @@ Rule:
   - DOMAIN,interface3.music.163.com,🎵 网易云音乐
   - DOMAIN,interface.music.163.com,🎵 网易云音乐
   - DOMAIN,music.163.com,🎵 网易云音乐
-  - IP-CIDR,39.105.63.80/32,🎵 网易云音乐
-  - IP-CIDR,45.254.48.1/32,🎵 网易云音乐
-  - IP-CIDR,47.100.127.239/32,🎵 网易云音乐
-  - IP-CIDR,59.111.160.195/32,🎵 网易云音乐
-  - IP-CIDR,59.111.160.197/32,🎵 网易云音乐
-  - IP-CIDR,59.111.181.35/32,🎵 网易云音乐
-  - IP-CIDR,59.111.181.38/32,🎵 网易云音乐
-  - IP-CIDR,59.111.181.60/32,🎵 网易云音乐
-  - IP-CIDR,101.71.154.241/32,🎵 网易云音乐
-  - IP-CIDR,103.126.92.132/32,🎵 网易云音乐
-  - IP-CIDR,103.126.92.133/32,🎵 网易云音乐
-  - IP-CIDR,112.13.119.17/32,🎵 网易云音乐
-  - IP-CIDR,112.13.122.1/32,🎵 网易云音乐
-  - IP-CIDR,115.236.118.33/32,🎵 网易云音乐
-  - IP-CIDR,115.236.121.1/32,🎵 网易云音乐
-  - IP-CIDR,118.24.63.156/32,🎵 网易云音乐
-  - IP-CIDR,193.112.159.225/32,🎵 网易云音乐
-  - IP-CIDR,223.252.199.66/32,🎵 网易云音乐
-  - IP-CIDR,223.252.199.67/32,🎵 网易云音乐
+  - IP-CIDR,39.105.63.80/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,45.254.48.1/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,47.100.127.239/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,59.111.160.195/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,59.111.160.197/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,59.111.181.35/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,59.111.181.38/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,59.111.181.60/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,101.71.154.241/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,103.126.92.132/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,103.126.92.133/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,112.13.119.17/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,112.13.122.1/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,115.236.118.33/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,115.236.121.1/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,118.24.63.156/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,193.112.159.225/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,223.252.199.66/32,🎵 网易云音乐,no-resolve
+  - IP-CIDR,223.252.199.67/32,🎵 网易云音乐,no-resolve
 
   # Netease Music Advertising
   - DOMAIN,admusicpic.music.126.net,REJECT

@@ -1,3 +1,9 @@
+# https://desperadoj.com/16.html
+#
+# 本代理完全免费，如遇收费请投诉举报卖家
+#
+# This proxy is for free, please complain the seller if you were charged
+
 # Netease Music
 HOST,api.iplay.163.com,🎵 网易云音乐
 HOST,apm3.music.163.com,🎵 网易云音乐
