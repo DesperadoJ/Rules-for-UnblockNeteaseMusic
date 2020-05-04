@@ -1,8 +1,7 @@
-# https://desperadoj.com/16.html
-#
-# 本代理完全免费，如遇收费请投诉举报卖家
-#
-# This proxy is for free, please complain the seller if you were charged
+# URL:     https://raw.githubusercontent.com/DesperadoJ/Rules-for-UnblockNeteaseMusic/master/Quantumult/quantumult-filter.txt
+# Project: https://github.com/DesperadoJ/Rules-for-UnblockNeteaseMusic
+# Note:    This proxy is for free, please complain the seller if you were charged
+#          本代理完全免费，如遇收费请投诉举报卖家
 
 # Netease Music
 HOST,api.iplay.163.com,🎵 网易云音乐
