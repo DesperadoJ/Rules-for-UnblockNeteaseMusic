@@ -1,0 +1,24 @@
+# URL:     https://raw.githubusercontent.com/DesperadoJ/Rules-for-UnblockNeteaseMusic/master/Clash/UnblockNeteaseMusicProxies.yaml
+# Project: https://github.com/DesperadoJ/Rules-for-UnblockNeteaseMusic
+# Note:    This proxy is for free, please complain the seller if you were charged
+#          本代理完全免费，如遇收费请投诉举报卖家
+
+proxies:
+  - name: 🎶 解锁 ( Windows, Android )
+    type: ss
+    server: music.desperadoj.com
+    port: 30001
+    cipher: aes-128-gcm
+    password: desperadoj.com_free_proxy_gt5i
+  - name: 🎶 解锁 ( macOS, iOS, Linux )
+    type: ss
+    server: music.desperadoj.com
+    port: 30003
+    cipher: aes-128-gcm
+    password: desperadoj.com_free_proxy_gt5i
+  - name: ‼️ 免费代理，如遇收费请举报
+    type: ss
+    server: 127.0.0.1
+    port: 8080
+    cipher: aes-128-gcm
+    password: This_proxy_is_for_free
