@@ -9,13 +9,13 @@ proxies:
     server: music.desperadoj.com
     port: 30001
     cipher: aes-128-gcm
-    password: desperadoj.com_free_proxy_gt5i
+    password: desperadoj.com_free_proxy_doe3
   - name: 🎶 解锁 ( macOS, iOS, Linux )
     type: ss
     server: music.desperadoj.com
     port: 30003
     cipher: aes-128-gcm
-    password: desperadoj.com_free_proxy_gt5i
+    password: desperadoj.com_free_proxy_doe3
   - name: ‼️ 免费代理，如遇收费请举报
     type: ss
     server: 127.0.0.1
