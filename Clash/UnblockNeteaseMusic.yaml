@@ -23,13 +23,13 @@ proxies:
     server: music.desperadoj.com
     port: 30001
     cipher: aes-128-gcm
-    password: desperadoj.com_free_proxy_doe3
+    password: desperadoj.com_free_proxy_x80j
   - name: 🎶 解锁 ( macOS, iOS, Linux )
     type: ss
     server: music.desperadoj.com
     port: 30003
     cipher: aes-128-gcm
-    password: desperadoj.com_free_proxy_doe3
+    password: desperadoj.com_free_proxy_x80j
 
 proxy-groups:
   - name: 🎵 网易云音乐
