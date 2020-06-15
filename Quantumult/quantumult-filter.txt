@@ -3,6 +3,12 @@
 # Note:    This proxy is for free, please complain the seller if you were charged
 #          本代理完全免费，如遇收费请投诉举报卖家
 
+# Netease Music Advertising
+HOST,admusicpic.music.126.net,REJECT
+HOST,iadmat.nosdn.127.net,REJECT
+HOST,iadmusicmat.music.126.net,REJECT
+HOST,iadmusicmatvideo.music.126.net,REJECT
+
 # Netease Music
 HOST,api.iplay.163.com,🎵 网易云音乐
 HOST,apm3.music.163.com,🎵 网易云音乐
@@ -29,12 +35,6 @@ IP-CIDR,118.24.63.156/32,🎵 网易云音乐
 IP-CIDR,193.112.159.225/32,🎵 网易云音乐
 IP-CIDR,223.252.199.66/32,🎵 网易云音乐
 IP-CIDR,223.252.199.67/32,🎵 网易云音乐
-
-# Netease Music Advertising
-HOST,admusicpic.music.126.net,REJECT
-HOST,iadmat.nosdn.127.net,REJECT
-HOST,iadmusicmat.music.126.net,REJECT
-HOST,iadmusicmatvideo.music.126.net,REJECT
 
 # Final
 FINAL,DIRECT
