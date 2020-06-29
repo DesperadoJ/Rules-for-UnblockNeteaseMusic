@@ -17,10 +17,10 @@ dns:
     - 223.5.5.5
 
 proxy-providers:
-  UnblockNeteaseMusicProxies:
+  NeteaseMusic:
     type: http
-    path: ./UnblockNeteaseMusicProxies.yaml
-    url: https://cdn.jsdelivr.net/gh/DesperadoJ/Rules-for-UnblockNeteaseMusic/Clash/UnblockNeteaseMusicProxies.yaml
+    path: ./Proxy/NeteaseMusic.yaml
+    url: https://cdn.jsdelivr.net/gh/DesperadoJ/Rules-for-UnblockNeteaseMusic/Clash/Proxy/NeteaseMusic.yaml
     interval: 43200
     health-check:
       enable: true
@@ -31,7 +31,7 @@ proxy-groups:
   - name: 🎵 网易云音乐
     type: select
     use:
-      - UnblockNeteaseMusicProxies
+      - NeteaseMusic
     proxies:
       - DIRECT
   - name: ‼️ 免费代理，如遇收费请举报
