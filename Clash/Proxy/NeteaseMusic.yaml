@@ -16,7 +16,7 @@ proxies:
     port: 30003
     cipher: aes-128-gcm
     password: desperadoj.com_free_proxy_x80j
-  - name: ‼️ 免费代理，如遇收费请举报
+  - name: ‼️ 免费代理，遇收费请举报
     type: ss
     server: 127.0.0.1
     port: 8080
