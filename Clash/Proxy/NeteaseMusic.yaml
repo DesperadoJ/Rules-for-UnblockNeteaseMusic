@@ -4,16 +4,10 @@
 #          本代理完全免费，如遇收费请投诉举报卖家
 
 proxies:
-  - name: 🎶 解锁 ( Windows, Android )
+  - name: 🎶 解锁
     type: ss
     server: music.desperadoj.com
     port: 30001
-    cipher: aes-128-gcm
-    password: desperadoj.com_free_proxy_x80j
-  - name: 🎶 解锁 ( macOS, iOS, Linux )
-    type: ss
-    server: music.desperadoj.com
-    port: 30003
     cipher: aes-128-gcm
     password: desperadoj.com_free_proxy_x80j
   - name: ‼️ 免费代理，遇收费请举报
