@@ -21,7 +21,7 @@ proxy-providers:
     type: http
     path: ./Proxy/NeteaseMusic.yaml
     url: https://cdn.jsdelivr.net/gh/DesperadoJ/Rules-for-UnblockNeteaseMusic/Clash/Proxy/NeteaseMusic.yaml
-    interval: 43200
+    interval: 3600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
