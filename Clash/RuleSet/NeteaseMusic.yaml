@@ -4,6 +4,7 @@ payload:
   - DOMAIN,apm3.music.163.com
   - DOMAIN,apm.music.163.com
   - DOMAIN,interface3.music.163.com
+  - DOMAIN,interface3.music.163.com.163jiasu.com
   - DOMAIN,interface.music.163.com
   - DOMAIN,music.163.com
   - IP-CIDR,39.105.63.80/32,no-resolve
@@ -21,6 +22,7 @@ payload:
   - IP-CIDR,112.13.119.17/32,no-resolve
   - IP-CIDR,112.13.119.18/32,no-resolve
   - IP-CIDR,112.13.122.1/32,no-resolve
+  - IP-CIDR,112.13.122.4/32,no-resolve
   - IP-CIDR,115.236.118.33/32,no-resolve
   - IP-CIDR,115.236.121.1/32,no-resolve
   - IP-CIDR,118.24.63.156/32,no-resolve
