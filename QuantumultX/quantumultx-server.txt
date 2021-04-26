@@ -1,2 +1,2 @@
-shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=🎶 解锁
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=🎶 解锁
 shadowsocks=127.0.0.1:8080, method=aes-128-gcm, password=This_proxy_is_for_free, fast-open=false, udp-relay=false, tag=‼️ 免费代理，如遇收费请举报

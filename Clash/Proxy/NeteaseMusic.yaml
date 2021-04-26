@@ -9,7 +9,7 @@ proxies:
     server: music.desperadoj.com
     port: 30001
     cipher: aes-128-gcm
-    password: desperadoj.com_free_proxy_emx2
+    password: desperadoj.com_free_proxy_d39m
   - name: ‼️ 免费代理，遇收费请举报
     type: ss
     server: 127.0.0.1
