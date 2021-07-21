@@ -18,7 +18,7 @@ dns:
     - 1.0.0.1
     - 8.8.4.4
   nameserver-policy:
-    '+.desperadoj.com': 'https://1.1.1.1/dns-quer'
+    '+.desperadoj.com': 'https://1.1.1.1/dns-query'
 
 proxy-providers:
   NeteaseMusic:
