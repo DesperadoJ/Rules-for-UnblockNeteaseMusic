@@ -22,7 +22,7 @@ proxy-providers:
   NeteaseMusic:
     type: http
     path: ./Proxy/NeteaseMusic.yaml
-    url: https://cdn.jsdelivr.net/gh/DesperadoJ/Rules-for-UnblockNeteaseMusic/Clash/Proxy/NeteaseMusic.yaml
+    url: https://cdn.staticaly.com/gh/DesperadoJ/Rules-for-UnblockNeteaseMusic/master/Clash/Proxy/NeteaseMusic.yaml
     interval: 3600
     health-check:
       enable: true
@@ -46,7 +46,7 @@ rule-providers:
     type: http
     behavior: classical
     path: ./RuleSet/NeteaseMusic.yaml
-    url: https://cdn.jsdelivr.net/gh/DesperadoJ/Rules-for-UnblockNeteaseMusic/Clash/RuleSet/NeteaseMusic.yaml
+    url: https://cdn.staticaly.com/gh/DesperadoJ/Rules-for-UnblockNeteaseMusic/master/Clash/RuleSet/NeteaseMusic.yaml
     interval: 86400
 
 rules:
