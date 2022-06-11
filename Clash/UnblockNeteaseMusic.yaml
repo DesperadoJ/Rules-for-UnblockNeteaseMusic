@@ -12,11 +12,24 @@ dns:
   enable: true
   listen: 0.0.0.0:5353
   enhanced-mode: fake-ip
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - 1.0.0.1
+    - 8.8.4.4
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
     - 1.0.0.1
     - 8.8.4.4
+  fallback:
+    - https://1.1.1.1/dns-query
+    - https://doh.dns.sb/dns-query
+    - https://public.dns.iij.jp/dns-query
+  fallback-filter:
+    geoip: true
+    domain:
+      - '+.desperadoj.com'
 
 proxy-providers:
   NeteaseMusic:
